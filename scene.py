@@ -40,7 +40,7 @@ def scene1(screen, player,
 
 
     # Когда время закончилось, запускаем персонажа в "полет"
-    elif config.speakTime + .3 >= currentTimestamp and player.rect.x > 900:
+    elif config.speakTime + .6 >= currentTimestamp and player.rect.x > 900:
         config.rotatePlayer -= 1
         player.rect.y -= 26
         player.image = rotate(player.image, config.rotatePlayer)
@@ -51,7 +51,7 @@ def scene1(screen, player,
         soundGlass()
         config.blackScreen = True
 
-    # Сценарий ереходна на следуюшую сцену
+    # Сценарий переходна на следуюшую сцену
     elif not get_busy() and player.rect.x > 900:
         player.scene = 2
         player.image = player.reImage

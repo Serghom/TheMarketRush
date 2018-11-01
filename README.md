@@ -13,7 +13,7 @@ How-to
 3. Clone this repository: git clone https://github.com/Serghom/TheMarketRush.git 
 or click Download ZIP in right panel and extract it.
 
-4. Run python theMarketRush.py from the repo's directory
+4. Run python *theMarketRush.py* from the repo's directory
 
 Use
 ------

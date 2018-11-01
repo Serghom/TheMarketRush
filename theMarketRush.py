@@ -7,6 +7,7 @@
 # By Serghom serghom@shmeile.ru
 # https://github.com/Serghom
 # Released under a "MIT License"
+__author__ = 'Serghom'
 
 from initFunction import *
 
