@@ -51,7 +51,7 @@ def scene1(screen, player,
         soundGlass()
         config.blackScreen = True
 
-    # Сценарий переходна на следуюшую сцену
+    # Сценарий перехода на следуюшую сцену
     elif not get_busy() and player.rect.x > 900:
         player.scene = 2
         player.image = player.reImage
