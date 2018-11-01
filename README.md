@@ -26,5 +26,7 @@ Use
 
 (TODO Download game (.exe) for windows)
 ***
-###ScreenShot
+
+ScreenShot
+------
 ![The Market Rush](themarket.jpg)
