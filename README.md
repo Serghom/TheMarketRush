@@ -24,7 +24,7 @@ Use
 ***
 (Note: Install pyGame for same version python as above)
 
-(TODO Download game (.exe) for windows)
+([Download](http://rgho.st/6jCmhn5MH) game (.exe) for windows)
 ***
 
 ScreenShot
