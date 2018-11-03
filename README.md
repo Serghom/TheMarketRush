@@ -6,7 +6,7 @@ A game is made by request of *[OBLADAUN](https://vk.com/obladaun)*.
 ***
 How-to
 ------
-1. Install Python 3.6.x from [here](https://www.python.org/download/releases/)
+1. Install Python 3.6.x from [here](https://www.python.org/downloads/)
 
 2. Install PyGame 1.9.X from [here](http://www.pygame.org/download.shtml)
 
