@@ -18,7 +18,7 @@ class Player(Sprite):
         self.reImage = self.image
         self.isRight = True
         self.isLeft = False
-        self.isWalk = False
+        self.isWalk = True
         self.isFinal = False
         self.isComment = True
         self.score = 0

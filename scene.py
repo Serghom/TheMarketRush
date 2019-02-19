@@ -26,28 +26,30 @@ def scene1(screen, player,
            camera, sprite_group):
 
     # obladaet.isWalk
-    player.isWalk = True
-    currentTimestamp = time.time()
+    if player.isComment:
+        player.isWalk = True
 
     # Если разговорное время не вышло и персонаж находится на нужных координатах
-    if config.speakTime >= currentTimestamp and player.rect.x > 900:
+    if player.isComment and player.rect.x > 900:
         # Останавливаем персонажа
-
         player.isWalk = False
         if not get_busy() and player.isComment:
             player.isComment = False
             saysPlayer()
+            config.speakTime = time.time() + .3
 
 
     # Когда время закончилось, запускаем персонажа в "полет"
-    elif config.speakTime + .6 >= currentTimestamp and player.rect.x > 900:
+    elif player.rect.x > 900 and not get_busy() and not config.isJump:
         config.rotatePlayer -= 1
         player.rect.y -= 26
         player.image = rotate(player.image, config.rotatePlayer)
+        if config.rotatePlayer < -10:
+            config.isJump = True
 
     # Как только персонаж долетел до границы экрана,
     # включаем звук стекла и красим экран в черный
-    elif player.rect.x > 900 and not get_busy() and not config.blackScreen:
+    elif config.isJump and not config.blackScreen:
         soundGlass()
         config.blackScreen = True
 

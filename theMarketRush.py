@@ -55,7 +55,7 @@ def mainFunction():
             screen.blit(timerFont.render(str(int(config.startTime - time.time())), 1, (255, 255, 255)), (600, 680))
         if player.isNonScore:
             screen.blit(timerFont.render(u'WON' if player.score > 0 else u'Lost', 1, (255, 255, 255)), (580, 680))
-            screen.blit(status.render(u'Please take a screenshot and press "Esc" to exit game' if player.score > 0
+            screen.blit(status.render(u'                  Press "Esc" to exit game' if player.score > 0
                                       else u'Fail, please try again. Press "Esc" to exit game', 1, (255, 255, 255)),
                         (370, 650))
 
@@ -135,4 +135,6 @@ def mainFunction():
 
     # write_log_close_game(player.level, player.score)
     pygame.quit()
+
+mainFunction()
 
