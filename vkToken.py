@@ -8,11 +8,11 @@ def getTokenFromWeb():
     done = True
     while done:
         result = re.match(r'http://api.vk.com/blank', driver.current_url)
-        if result != None:
+        if result is not None:
             url = driver.current_url
             done = False
             driver.close()
-    token = url[re.search('access_token=', url).end() : re.search('&', url).start()]
+    token = url[re.search('access_token=', url).end(): re.search('&', url).start()]
     writeToken(token)
     return token
 

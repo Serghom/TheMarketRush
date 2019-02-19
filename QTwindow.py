@@ -21,7 +21,7 @@ class QuestWindow(QMainWindow):
     def setAutorized(self):
         try:
             vkToken.readToken()
-            self.qu.radioButton_2.setText('Авторизация через ВКонтакте (Вы уже авторизированы)')
+            self.qu.radioButton_2.setText('Вход через ВКонтакте (Вы уже авторизированны)')
         except:
             pass
 
