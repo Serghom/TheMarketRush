@@ -35,4 +35,4 @@ def getToken():
     except:
         return getTokenFromWeb()
 
-print(getToken())
+# print(getToken())

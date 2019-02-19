@@ -14,5 +14,6 @@ startGameTime = None
 vol = None
 rotatePlayer = 0
 blackScreen = False
+isAuthorized = False
 
 
