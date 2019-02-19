@@ -69,11 +69,9 @@ def scene1(screen, player,
     player.control()
 
 
-def scene2(
-            screen, player, luna,
+def scene2(screen, player, luna,
             collision, sprite_group,
-            sprite_group_loot, camera
-    ):
+            sprite_group_loot, camera):
 
     # Закрашиваем фон в черный
     screen.fill((0, 0, 0))

@@ -83,6 +83,9 @@ add_sprite_group(sprite_group_scene_1, sprite_group_scene_2,
 # Массив объектов для проверки столкновений
 collision = []
 
+
+# print()
+
 # Таймер для анимации разговора
 config.speakTime = time.time() + 5
 

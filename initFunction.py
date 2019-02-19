@@ -48,8 +48,14 @@ def init_pygame():
 
 
 def create_surface(W, H):
+    icon = pygame.image.load('icon/icon.jpg')
+    pygame.display.set_caption('The Market Rush')
+    pygame.display.set_icon(icon)
     # создание окна и скрина
-    window = pygame.display.set_mode((W, H), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
+    if pygame.display.Info().current_w > W or pygame.display.Info().current_h > H:
+        window = pygame.display.set_mode((W, H), pygame.HWSURFACE | pygame.DOUBLEBUF)
+    else:
+        window = pygame.display.set_mode((W, H), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
     screen = pygame.Surface((W, H))
     return window, screen
 

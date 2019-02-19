@@ -13,7 +13,7 @@ mixer.init()
 
 
 def playMusic():
-    music_themarket = music + '1ac41fc1b0639d_pidoras.ogg'
+    music_themarket = music + 'OBLADAET_-_THEMARKET.ogg'
     mixer.music.load(music_themarket)
     mixer.music.set_volume(config.vol)
     mixer.music.play(-1)
