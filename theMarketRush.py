@@ -136,5 +136,5 @@ def mainFunction():
     # write_log_close_game(player.level, player.score)
     pygame.quit()
 
-mainFunction()
+# mainFunction()
 
